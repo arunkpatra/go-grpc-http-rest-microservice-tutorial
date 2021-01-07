@@ -19,7 +19,7 @@ env:
 
 before_install:
   - chmod +x install-protobuf.sh
-  - chmod +x /usr/local/bin/protoc
+#  - chmod +x /usr/local/bin/protoc
   - ./install-protobuf.sh
   - go get -v golang.org/x/lint/golint
 
