@@ -1,5 +1,5 @@
 #!/bin/sh
 set -ex
-wget https://protobuf.googlecode.com/files/protobuf-2.4.1.tar.gz
-tar -xzvf protobuf-2.4.1.tar.gz
-cd protobuf-2.4.1 && ./configure --prefix=/usr && make && sudo make install
+wget https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0.-linux-x86_64.zip
+sudo unzip -o protoc-3.14.0.-linux-x86_64.zip -d /usr/local bin/protoc
+sudo unzip -o protoc-3.14.0.-linux-x86_64.zip -d /usr/local 'include/*'
