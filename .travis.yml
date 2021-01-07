@@ -1,0 +1,25 @@
+language: go
+
+go:
+  - 1.10.x
+  - 1.11.x
+  - 1.12.x
+  - 1.13.x
+
+#addons:
+#  apt:
+#    packages:
+#      - rabbitmq-server
+
+services:
+  - mysql
+
+env:
+  - GO111MODULE=on db-host=127.0.0.1:3306 db-user=travis db-password= db-schema=mysql http-port=8080 grpc-port=9090 log-level=1 log-time-format=2006-01-02T15:04:05.999999999Z07:00
+
+before_install:
+  - go get -v golang.org/x/lint/golint
+
+script:
+  - ./third_party/protoc-gen.sh
+  - go test -cpu=1,2 ./...

@@ -7,8 +7,28 @@ Based on these tutorials:
 - [Go Modules](https://insujang.github.io/2020-04-04/go-modules/)
 - [MySQL in Docker Container](https://phoenixnap.com/kb/mysql-docker-container)
 
+### Build
+
+- Run Protoc
+  ``` 
+  ./third_party/protoc-gen.sh
+  ```
+- Build Server
+    ``` 
+    cd cmd/server
+    go build
+    ```
+
+- Build REST and gRPC Clients
+    ``` 
+    cd cmd/client-rest
+    go build
+    
+    cd cmd/client-grpc
+    go build
+    ```
 ### Running
-Build
+Build Docker Image
 ```
 docker build . -t go-dock  
 ```
