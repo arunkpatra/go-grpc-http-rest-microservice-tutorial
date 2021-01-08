@@ -18,9 +18,9 @@ env:
   - GO111MODULE=on db-host=127.0.0.1:3306 db-user=travis db-password= db-schema=mysql http-port=8080 grpc-port=9090 log-level=1 log-time-format=2006-01-02T15:04:05.999999999Z07:00
 
 before_install:
-#  - chmod +x install-protobuf.sh
+  - chmod +x install-protobuf.sh
 #  - chmod +x /usr/local/bin/protoc
-#  - ./install-protobuf.sh
+  - ./install-protobuf.sh
   - go env GOPATH
 #  - export GOROOT=/home/travis/gopath
   - export GOPATH=$HOME/go
