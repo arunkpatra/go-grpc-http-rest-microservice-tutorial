@@ -21,6 +21,7 @@ before_install:
 #  - chmod +x install-protobuf.sh
 #  - chmod +x /usr/local/bin/protoc
 #  - ./install-protobuf.sh
+  - go env GOPATH
   - export GOROOT=/usr/local/go
   - export GOPATH=$HOME/go
   - export GOBIN=$GOPATH/bin
