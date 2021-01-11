@@ -32,7 +32,6 @@ before_install:
 
 script:
   - go env GOPATH
-  #  - export GOROOT=/home/travis/gopath
   - export GOPATH=$HOME/go
   - export GOBIN=$GOPATH/bin
   - export PATH=$PATH:$GOPATH:$GOBIN
