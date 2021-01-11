@@ -22,26 +22,26 @@ before_install:
 #  - chmod +x /usr/local/bin/protoc
   - ./install-protobuf.sh
 #  - export GOROOT=/home/travis/gopath
-  - export GOPATH=$HOME/go
-  - export GOBIN=$GOPATH/bin
-  - export PATH=$PATH:$GOPATH:$GOBIN
+#  - export GOPATH=$HOME/go
+#  - export GOBIN=$GOPATH/bin
+#  - export PATH=$PATH:$GOPATH:$GOBIN
 #  - go get -v golang.org/x/lint/golint
-  - go get -u github.com/golang/protobuf/{proto,protoc-gen-go}
-  - go install github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2 google.golang.org/protobuf/cmd/protoc-gen-go google.golang.org/grpc/cmd/protoc-gen-go-grpc
+#  - go get -u github.com/golang/protobuf/{proto,protoc-gen-go}
+#  - go install github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2 google.golang.org/protobuf/cmd/protoc-gen-go google.golang.org/grpc/cmd/protoc-gen-go-grpc
 
 script:
-  - go env GOPATH
-  - export GOPATH=$HOME/go
-  - export GOBIN=$GOPATH/bin
-  - export PATH=$PATH:$GOPATH:$GOBIN
-  - echo $PATH
-  - echo $GOBIN
-  - echo $GOPATH
-  - echo $GOROOT
-  - which protoc
-  - which protoc-gen-go
-  - which protoc-gen-grpc-gateway
-  - which protoc-gen-swagger
-  - go mod download
+#  - go env GOPATH
+#  - export GOPATH=$HOME/go
+#  - export GOBIN=$GOPATH/bin
+#  - export PATH=$PATH:$GOPATH:$GOBIN
+#  - echo $PATH
+#  - echo $GOBIN
+#  - echo $GOPATH
+#  - echo $GOROOT
+#  - which protoc
+#  - which protoc-gen-go
+#  - which protoc-gen-grpc-gateway
+#  - which protoc-gen-swagger
+#  - go mod download
   - ./third_party/protoc-gen.sh
   - go test -cpu=1,2 ./...
