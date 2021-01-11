@@ -35,6 +35,13 @@ script:
   - export GOPATH=$HOME/go
   - export GOBIN=$GOPATH/bin
   - export PATH=$PATH:$GOPATH:$GOBIN
+  - echo $PATH
+  - echo $GOBIN
+  - echo $GOPATH
+  - echo $GOROOT
   - which protoc-gen-go
+  - which protoc-gen-grpc-gateway
+  - which protoc-gen-swagger
+  - go mod download
   - sudo ./third_party/protoc-gen.sh
   - go test -cpu=1,2 ./...
