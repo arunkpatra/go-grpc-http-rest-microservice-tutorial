@@ -8,6 +8,7 @@ Based on these tutorials:
 - [Building a Docker image for your Go based microservice](https://levelup.gitconnected.com/complete-guide-to-create-docker-container-for-your-golang-application-80f3fb59a15e)
 - [Go Modules](https://insujang.github.io/2020-04-04/go-modules/)
 - [MySQL in Docker Container](https://phoenixnap.com/kb/mysql-docker-container)
+- [Code Coverage Reporting](https://github.com/mattn/goveralls)
 
 ### Build
 
