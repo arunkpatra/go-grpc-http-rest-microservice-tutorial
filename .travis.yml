@@ -31,9 +31,9 @@ before_install:
 
 script:
 #  - go env GOPATH
-#  - export GOPATH=$HOME/go
-#  - export GOBIN=$GOPATH/bin
-#  - export PATH=$PATH:$GOPATH:$GOBIN
+  - export GOPATH=$HOME/go
+  - export GOBIN=$GOPATH/bin
+  - export PATH=$PATH:$GOPATH:$GOBIN
 #  - echo $PATH
 #  - echo $GOBIN
 #  - echo $GOPATH
@@ -42,6 +42,6 @@ script:
 #  - which protoc-gen-go
 #  - which protoc-gen-grpc-gateway
 #  - which protoc-gen-swagger
-  - go mod download
+#  - go mod download
   - ./third_party/protoc-gen.sh
   - go test -cpu=1,2 ./...
