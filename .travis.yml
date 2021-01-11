@@ -46,6 +46,7 @@ script:
 #  - go mod download
   - sudo cp /home/travis/go/bin/protoc-gen-go /usr/local/
   - sudo chmod +x /usr/local/protoc-gen-go
+  - sudo chmod +x /home/travis/go/bin/protoc-gen-go
   - which protoc-gen-go
   - sudo ./third_party/protoc-gen.sh
   - go test -cpu=1,2 ./...
