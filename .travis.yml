@@ -46,8 +46,10 @@ script:
 #  - go mod download
   - sudo cp /home/travis/go/bin/protoc-gen-go /usr/local/bin/
   - sudo cp /home/travis/go/bin/protoc-gen-grpc-gateway /usr/local/bin/
+  - sudo cp /home/travis/go/bin/protoc-gen-swagger /usr/local/bin/
   - sudo chmod +x /usr/local/bin/protoc-gen-go
   - sudo chmod +x /usr/local/bin/protoc-gen-grpc-gateway
+  - sudo chmod +x /usr/local/bin/protoc-gen-swagger
   - sudo which protoc-gen-go
   - sudo ./third_party/protoc-gen.sh
   - go test -cpu=1,2 ./...
