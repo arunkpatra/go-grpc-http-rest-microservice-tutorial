@@ -1,5 +1,7 @@
 ## gRPC and REST API using Golang
 
+[![Build Status](https://travis-ci.org/arunkpatra/go-grpc-http-rest-microservice-tutorial.svg?branch=main)](https://travis-ci.org/arunkpatra/go-grpc-http-rest-microservice-tutorial)
+
 Based on these tutorials:
 
 - [gRPC and REST Microservice using Go](https://medium.com/@amsokol.com/tutorial-how-to-develop-go-grpc-microservice-with-http-rest-endpoint-middleware-kubernetes-daebb36a97e9)
