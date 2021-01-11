@@ -38,6 +38,7 @@ script:
   - echo $GOBIN
   - echo $GOPATH
   - echo $GOROOT
+  - which protoc
   - which protoc-gen-go
   - which protoc-gen-grpc-gateway
   - which protoc-gen-swagger
