@@ -45,7 +45,7 @@ script:
 #  - which protoc-gen-swagger
 #  - go mod download
   - sudo cp /home/travis/go/bin/protoc-gen-go /usr/local/
-  - chmod +x /usr/local/protoc-gen-go
+  - sudo chmod +x /usr/local/protoc-gen-go
   - which protoc-gen-go
   - sudo ./third_party/protoc-gen.sh
   - go test -cpu=1,2 ./...
