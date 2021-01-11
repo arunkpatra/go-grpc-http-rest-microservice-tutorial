@@ -35,5 +35,6 @@ script:
   - export GOPATH=$HOME/go
   - export GOBIN=$GOPATH/bin
   - export PATH=$PATH:$GOPATH:$GOBIN
+  - which protoc-gen-go
   - sudo ./third_party/protoc-gen.sh
   - go test -cpu=1,2 ./...
