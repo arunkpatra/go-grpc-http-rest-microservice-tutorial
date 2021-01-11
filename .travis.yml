@@ -43,5 +43,5 @@ script:
   - which protoc-gen-grpc-gateway
   - which protoc-gen-swagger
   - go mod download
-  - sudo ./third_party/protoc-gen.sh
+  - ./third_party/protoc-gen.sh
   - go test -cpu=1,2 ./...
