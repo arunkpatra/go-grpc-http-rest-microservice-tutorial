@@ -19,31 +19,18 @@ env:
 
 before_install:
   - chmod +x install-protobuf.sh
-#  - chmod +x /usr/local/bin/protoc
   - ./install-protobuf.sh
-#  - export GOROOT=/home/travis/gopath
   - export GOPATH=$HOME/go
   - export GOBIN=$GOPATH/bin
   - export PATH=$PATH:$GOPATH:$GOBIN
-#  - go get -v golang.org/x/lint/golint
   - go get -u github.com/golang/protobuf/{proto,protoc-gen-go}
-#  - go install google.golang.org/protobuf/cmd/protoc-gen-go
   - go install google.golang.org/grpc/cmd/protoc-gen-go-grpc
   - go install github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2 github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger
 
 script:
-#  - go env GOPATH
   - export GOPATH=$HOME/go
   - export GOBIN=$GOPATH/bin
   - export PATH=$PATH:$GOPATH:$GOBIN
-#  - echo $PATH
-#  - echo $GOBIN
-#  - echo $GOPATH
-#  - echo $GOROOT
-#  - which protoc
-#  - which protoc-gen-grpc-gateway
-#  - which protoc-gen-swagger
-#  - go mod download
   - sudo cp /home/travis/go/bin/protoc-gen-go /usr/local/bin/
   - sudo cp /home/travis/go/bin/protoc-gen-grpc-gateway /usr/local/bin/
   - sudo cp /home/travis/go/bin/protoc-gen-swagger /usr/local/bin/
