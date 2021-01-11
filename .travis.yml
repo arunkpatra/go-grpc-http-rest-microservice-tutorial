@@ -42,6 +42,6 @@ script:
 #  - which protoc-gen-go
 #  - which protoc-gen-grpc-gateway
 #  - which protoc-gen-swagger
-#  - go mod download
+  - go mod download
   - ./third_party/protoc-gen.sh
   - go test -cpu=1,2 ./...
