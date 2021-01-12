@@ -20,7 +20,7 @@ jobs:
       - name: Install goveralls
         env:
           GO111MODULE: off
-        run: go get github.com/mattn/goveralls
+        run: go get github.com/arunkpatra/go-grpc-http-rest-microservice-tutorial
       - name: Send coverage
         env:
           COVERALLS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
