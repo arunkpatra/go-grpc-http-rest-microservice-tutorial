@@ -1,6 +1,7 @@
 ## gRPC and REST API using Golang
 
 [![Build Status](https://travis-ci.org/arunkpatra/go-grpc-http-rest-microservice-tutorial.svg?branch=main)](https://travis-ci.org/arunkpatra/go-grpc-http-rest-microservice-tutorial)
+[![Coverage Status](https://coveralls.io/repos/github/arunkpatra/go-grpc-http-rest-microservice-tutorial/badge.svg?branch=main)](https://coveralls.io/github/arunkpatra/go-grpc-http-rest-microservice-tutorial?branch=main)
 
 Based on these tutorials:
 
